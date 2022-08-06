@@ -1,1 +1,1 @@
-The repository holding my personal website.
+My personal website.
