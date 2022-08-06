@@ -1,3 +1,4 @@
 module hykerion
 
-go 1.12
+// +heroku goVersion go1.18
+go 1.18
