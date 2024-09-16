@@ -1,2 +1,4 @@
 1. Blog
 2. Social links
+3. Dark Mode/colour picker
+4. security vulnerabilities with ghpages
