@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { ThemeStore } from '../store/theme/theme.store';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,11 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  readonly themeStore = inject(ThemeStore);
+
+  switchTheme() {
+    this.themeStore.switchBetweenDarkAndLight();
+    console.log(this.themeStore.theme());
+  }
+}
