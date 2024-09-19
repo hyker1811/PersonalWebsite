@@ -1,5 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { watchState } from '@ngrx/signals';
 import { ThemeStore } from '../store/theme/theme.store';
 
 @Component({
@@ -12,8 +13,14 @@ import { ThemeStore } from '../store/theme/theme.store';
 export class HeaderComponent {
   readonly themeStore = inject(ThemeStore);
 
+  constructor() {
+    watchState(this.themeStore, (store) => {
+      console.log('watchState', store.theme);
+      document.body.classList.toggle('dark-theme');
+    });
+  }
+
   switchTheme() {
     this.themeStore.switchBetweenDarkAndLight();
-    console.log(this.themeStore.theme());
   }
 }
