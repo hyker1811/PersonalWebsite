@@ -16,7 +16,6 @@ export class HeaderComponent {
   constructor() {
     watchState(this.themeStore, (store) => {
       console.log('watchState', store.theme);
-      document.body.classList.toggle('dark-theme');
     });
   }
 
