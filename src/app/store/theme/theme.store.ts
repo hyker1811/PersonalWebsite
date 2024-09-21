@@ -1,6 +1,6 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 
-enum Theme {
+export enum Theme {
   DARK = 'dark-theme',
   LIGHT = 'light-theme',
 }

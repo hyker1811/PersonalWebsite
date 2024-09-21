@@ -1,0 +1,17 @@
+.dark-theme {
+  background-color: #383838;
+}
+
+p {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+p.dark-theme {
+  color: white;
+}
+
+p.light-theme {
+  color: black;
+}
