@@ -1,19 +1,27 @@
 <app-header></app-header>
-<img
-  style="
-    width: 70%;
-    height: 100%;
-    min-width: 330px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  "
-  src="assets/foxjump.jpg"
-/>
-<p style="font-size: 10px; text-align: center">
-  Image courtesy of
-  <a
-    href="https://www.npr.org/sections/krulwich/2014/01/03/259136596/youre-invisible-but-ill-eat-you-anyway-secrets-of-snow-diving-foxes"
-    >Robert Krulwich</a
+
+<div class="container-fluid">
+  <img
+    style="
+      width: 70%;
+      height: 100%;
+      min-width: 330px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    "
+    src="assets/foxjump.jpg"
+  />
+  <p
+    [ngClass]="{
+      'dark-theme': this.themeStore.theme() === 'dark-theme',
+      'light-theme': this.themeStore.theme() === 'light-theme'
+    }"
   >
-</p>
+    Image courtesy of
+    <a
+      href="https://www.npr.org/sections/krulwich/2014/01/03/259136596/youre-invisible-but-ill-eat-you-anyway-secrets-of-snow-diving-foxes"
+      >Robert Krulwich</a
+    >
+  </p>
+</div>

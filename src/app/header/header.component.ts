@@ -8,7 +8,6 @@ import { ThemeStore } from '../store/theme/theme.store';
   standalone: true,
   imports: [NgbNavModule, CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   readonly themeStore = inject(ThemeStore);
