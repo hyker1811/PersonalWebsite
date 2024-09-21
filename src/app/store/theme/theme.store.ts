@@ -1,8 +1,8 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 
 enum Theme {
-  DARK = 'dark',
-  LIGHT = 'light',
+  DARK = 'dark-theme',
+  LIGHT = 'light-theme',
 }
 
 export const ThemeStore = signalStore(
