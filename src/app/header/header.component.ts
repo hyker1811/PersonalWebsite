@@ -4,10 +4,9 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ThemeStore } from '../store/theme/theme.store';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [NgbNavModule, CommonModule],
-  templateUrl: './header.component.html',
+    selector: 'app-header',
+    imports: [NgbNavModule, CommonModule],
+    templateUrl: './header.component.html'
 })
 export class HeaderComponent {
   readonly themeStore = inject(ThemeStore);

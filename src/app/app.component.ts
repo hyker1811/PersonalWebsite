@@ -12,12 +12,11 @@ import { watchState } from '@ngrx/signals';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-root',
+    imports: [RouterOutlet, HeaderComponent, CommonModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   readonly themeStore = inject(ThemeStore);
