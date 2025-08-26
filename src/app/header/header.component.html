@@ -13,9 +13,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
-        </li>
+        </li> -->
       </ul>
       <div
         class="form-check form-switch"
@@ -26,6 +26,7 @@
           type="checkbox"
           role="switch"
           (click)="this.themeStore.switchBetweenDarkAndLight()"
+          [checked]="this.themeStore.theme() === 'dark-theme' ? true : false"
         />
       </div>
     </div>

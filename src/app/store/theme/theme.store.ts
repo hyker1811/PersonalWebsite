@@ -7,7 +7,7 @@ export enum Theme {
 
 export const ThemeStore = signalStore(
   { providedIn: 'root' },
-  withState({ theme: Theme.LIGHT }),
+  withState({ theme: Theme.DARK }),
   withMethods((store) => ({
     switchBetweenDarkAndLight(): void {
       switch (store.theme()) {
