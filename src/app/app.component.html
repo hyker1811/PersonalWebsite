@@ -1,18 +1,9 @@
 <app-header></app-header>
 
 <div class="container-fluid">
-  <img
-    style="
-      width: 60%;
-      height: 100%;
-      min-width: 330px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    "
-    src="assets/foxjump.png"
-  />
+  <img class="main-image" src="assets/foxjump.png" />
   <p
+    class="attribution-text"
     [ngClass]="{
       'dark-theme': this.themeStore.theme() === 'dark-theme',
       'light-theme': this.themeStore.theme() === 'light-theme'
