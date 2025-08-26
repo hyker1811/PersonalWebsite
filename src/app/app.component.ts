@@ -10,10 +10,11 @@ import { HeaderComponent } from './header/header.component';
 import { Theme, ThemeStore } from './store/theme/theme.store';
 import { watchState } from '@ngrx/signals';
 import { CommonModule } from '@angular/common';
+import { BodyComponent } from './body/body.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, BodyComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   encapsulation: ViewEncapsulation.None,
