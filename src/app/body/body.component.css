@@ -14,3 +14,21 @@ p.attribution-text {
 p.dark-theme {
   color: white;
 }
+
+.socials {
+  text-align: center;
+}
+
+img.icon {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p.disclaimer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
