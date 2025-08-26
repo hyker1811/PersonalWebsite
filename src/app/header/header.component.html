@@ -1,6 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav
+  [ngClass]="{
+    'navbar-dark': this.themeStore.theme() === 'dark-theme',
+    'bg-dark': this.themeStore.theme() === 'dark-theme',
+    'navbar-light': this.themeStore.theme() === 'light-theme',
+    'bg-light': this.themeStore.theme() === 'light-theme'
+  }"
+  class="navbar navbar-expand-sm"
+>
   <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -9,6 +17,17 @@
           <a class="nav-link" href="#">Blog</a>
         </li>
       </ul>
+      <div
+        class="form-check form-switch"
+        style="margin-left: auto; margin-right: 0"
+      >
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          (click)="this.themeStore.switchBetweenDarkAndLight()"
+        />
+      </div>
     </div>
   </div>
 </nav>
