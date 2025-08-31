@@ -1,0 +1,31 @@
+div {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #333333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-self: center;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}

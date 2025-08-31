@@ -1,16 +1,9 @@
-import {
-  Component,
-  inject,
-  OnInit,
-  Renderer2,
-  ViewEncapsulation,
-} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Component, inject, Renderer2, ViewEncapsulation } from '@angular/core';
+import { watchState } from '@ngrx/signals';
+import { BodyComponent } from './body/body.component';
 import { HeaderComponent } from './header/header.component';
 import { Theme, ThemeStore } from './store/theme/theme.store';
-import { watchState } from '@ngrx/signals';
-import { CommonModule } from '@angular/common';
-import { BodyComponent } from './body/body.component';
 
 @Component({
   selector: 'app-root',

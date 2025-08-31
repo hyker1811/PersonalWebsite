@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Renderer2 } from '@angular/core';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { Theme, ThemeStore } from '../store/theme/theme.store';
-import { watchState } from '@ngrx/signals';
+import { Component, inject } from '@angular/core';
+import { ThemeStore } from '../store/theme/theme.store';
 
 @Component({
   selector: 'app-body',
